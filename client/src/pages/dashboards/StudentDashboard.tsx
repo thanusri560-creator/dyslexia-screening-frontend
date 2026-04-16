@@ -69,12 +69,12 @@ export default function StudentDashboard() {
                 </div>
                 <div className="text-3xl">📝</div>
               </div>
-              <Link href="/screening">
+              <a href="/screening" className="no-underline">
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 gap-2 h-12">
                   <Play className="w-4 h-4" />
                   Start Screening
                 </Button>
-              </Link>
+              </a>
             </div>
 
             {/* Latest Result Card */}
@@ -107,11 +107,11 @@ export default function StudentDashboard() {
                     <span className="font-semibold text-foreground">{latestResult.score}%</span>
                   </div>
                 </div>
-                <Link href="/results">
+                <a href="/results" className="no-underline">
                   <Button variant="outline" className="w-full h-10">
                     View Details
                   </Button>
-                </Link>
+                </a>
               </div>
             )}
           </section>
@@ -185,21 +185,21 @@ export default function StudentDashboard() {
               <TrendingUp className="w-6 h-6 text-primary" />
               <h2 className="text-2xl font-semibold text-foreground">Your Progress</h2>
             </div>
-            <Link href="/progress">
+            <a href="/progress" className="no-underline">
               <Button variant="outline" className="w-full h-10">
                 View Detailed Progress
               </Button>
-            </Link>
+            </a>
           </section>
 
           {/* Resources Section */}
           <section className="card-soft space-y-4">
             <h2 className="text-2xl font-semibold text-foreground mb-4">Recommended Resources</h2>
-            <Link href="/recommendations">
+            <a href="/recommendations" className="no-underline">
               <Button variant="outline" className="w-full h-10">
                 View Personalized Recommendations
               </Button>
-            </Link>
+            </a>
           </section>
         </div>
       </Layout>
