@@ -94,21 +94,19 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-border bg-white/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container flex items-center justify-between h-16">
-          <Link href="/">
-            <a className="flex items-center gap-2 font-display text-2xl font-bold text-primary">
+          <a href="/" className="flex items-center gap-2 font-display text-2xl font-bold text-primary no-underline">
               <span className="text-2xl">🧠</span>
               <span className="hidden sm:inline">DyslexiaScreen</span>
             </a>
-          </Link>
           <div className="flex gap-3">
-            <Link href="/login">
+            <a href="/login" className="no-underline">
               <Button variant="ghost">Login</Button>
-            </Link>
-            <Link href="/signup">
+            </a>
+            <a href="/signup" className="no-underline">
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
                 Sign Up
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </header>
@@ -159,11 +157,11 @@ export default function Home() {
               >
                 Start Screening <ArrowRight className="w-4 h-4" />
               </Button>
-              <Link href="/help">
+              <a href="/help" className="no-underline">
                 <Button variant="outline" size="lg">
                   Learn More
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
 
