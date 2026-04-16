@@ -222,6 +222,19 @@ export default function Help() {
           </div>
         </section>
 
+        {/* Disclaimer Section */}
+        <section className="bg-accent/10 border-l-4 border-accent rounded-lg p-6 space-y-4">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">⚠️</span>
+            <div>
+              <h2 className="text-xl font-semibold text-foreground mb-2">Important Disclaimer</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                This screening tool is designed for informational purposes only and is <strong>NOT a medical diagnosis system</strong>. Results should not be considered a formal diagnosis of dyslexia. For a comprehensive evaluation, please consult with a qualified dyslexia specialist, educational psychologist, or healthcare professional. Always seek professional guidance for educational and medical decisions.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section className="space-y-6">
           <h2 className="text-3xl font-display font-bold text-foreground">Get in Touch</h2>

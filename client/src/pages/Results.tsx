@@ -84,6 +84,17 @@ export default function Results() {
     { name: 'High Risk', value: history.filter(r => r.riskLevel === 'high').length },
   ];
 
+  const aiSummary = {
+    low: 'Your assessment results suggest typical reading development. Continue with regular reading practice and maintain strong literacy habits. No immediate intervention appears necessary at this time.',
+    moderate: 'Your results indicate some characteristics associated with dyslexia. We recommend a comprehensive evaluation by a qualified dyslexia specialist or educational psychologist. Early intervention can significantly improve reading outcomes.',
+    high: 'Your assessment shows multiple indicators of dyslexia. Professional evaluation is strongly recommended. With appropriate intervention and support, individuals with dyslexia can develop strong reading and writing skills.',
+  };
+
+  const handleDownloadPDF = () => {
+    // Placeholder for PDF generation
+    alert('PDF download feature will be available soon. This will generate a comprehensive report with your results.');
+  };
+
   return (
     <ProtectedRoute>
       <Layout>
@@ -98,9 +109,9 @@ export default function Results() {
                 </p>
               </div>
               <div className="flex gap-2">
-                <Button variant="outline" className="gap-2">
+                <Button onClick={handleDownloadPDF} variant="outline" className="gap-2">
                   <Download className="w-4 h-4" />
-                  Download
+                  Download PDF
                 </Button>
                 <Button variant="outline" className="gap-2">
                   <Share2 className="w-4 h-4" />
@@ -144,6 +155,16 @@ export default function Results() {
                 </p>
               </div>
             </div>
+          </section>
+
+          {/* AI-Generated Summary */}
+          <section className="card-soft bg-gradient-to-r from-primary/5 to-accent/5 border-l-4 border-primary space-y-4">
+            <h2 className="text-xl font-semibold text-foreground flex items-center gap-2">
+              <span>🧠</span> AI Assessment Summary
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              {aiSummary[latestResult.riskLevel as keyof typeof aiSummary]}
+            </p>
           </section>
 
           {/* Detailed Breakdown */}

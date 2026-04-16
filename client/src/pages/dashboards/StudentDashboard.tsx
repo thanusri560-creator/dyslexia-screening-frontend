@@ -30,6 +30,18 @@ export default function StudentDashboard() {
 
   const latestResult = results[results.length - 1];
 
+  const getWeakAreas = () => {
+    if (!latestResult) return [];
+    const areas = [
+      { name: 'Reading Fluency', score: latestResult.details.readingTest },
+      { name: 'Phonological Awareness', score: latestResult.details.phonologicalTasks },
+      { name: 'Spelling', score: latestResult.details.spellingQuiz },
+    ];
+    return areas.sort((a, b) => a.score - b.score).slice(0, 2);
+  };
+
+  const weakAreas = getWeakAreas();
+
   return (
     <ProtectedRoute requiredRole={['student']}>
       <Layout>
@@ -138,6 +150,32 @@ export default function StudentDashboard() {
                   </div>
                 ))}
               </div>
+            </section>
+          )}
+
+          {/* Weak Areas Analysis */}
+          {latestResult && weakAreas.length > 0 && (
+            <section className="card-soft space-y-4 border-l-4 border-accent">
+              <h2 className="text-2xl font-semibold text-foreground">Areas for Improvement</h2>
+              <div className="space-y-3">
+                {weakAreas.map((area) => (
+                  <div key={area.name} className="flex items-center justify-between p-3 bg-secondary rounded-lg">
+                    <span className="text-foreground font-medium">{area.name}</span>
+                    <div className="flex items-center gap-2">
+                      <div className="w-24 h-2 bg-border rounded-full overflow-hidden">
+                        <div
+                          className="h-full bg-accent rounded-full transition-all"
+                          style={{ width: `${area.score}%` }}
+                        />
+                      </div>
+                      <span className="text-sm text-muted-foreground font-medium min-w-12 text-right">{area.score}%</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm text-muted-foreground">
+                💡 Focus on these areas with targeted exercises and practice. Check recommendations for specific strategies.
+              </p>
             </section>
           )}
 

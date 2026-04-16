@@ -8,7 +8,7 @@ import { screeningAPI } from '@/lib/api';
 import { Mic, MicOff, Play, Pause, CheckCircle, AlertCircle } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 
-type ScreeningStep = 'intro' | 'reading' | 'phonological' | 'spelling' | 'complete';
+type ScreeningStep = 'intro' | 'reading' | 'phonological' | 'spelling' | 'processing' | 'complete';
 
 export default function Screening() {
   const [, setLocation] = useLocation();
@@ -27,6 +27,7 @@ export default function Screening() {
     reading: 25,
     phonological: 50,
     spelling: 75,
+    processing: 90,
     complete: 100,
   };
 
@@ -75,12 +76,16 @@ export default function Screening() {
 
   const handleSubmitScreening = async () => {
     setIsSubmitting(true);
+    setStep('processing');
     try {
+      // Simulate processing delay
+      await new Promise(resolve => setTimeout(resolve, 2000));
       await screeningAPI.submitAnswers(sessionId, answers);
       setStep('complete');
     } catch (error) {
       console.error('Failed to submit screening:', error);
       alert('Failed to submit screening. Please try again.');
+      setStep('spelling');
     } finally {
       setIsSubmitting(false);
     }
@@ -144,6 +149,12 @@ export default function Screening() {
               <div className="bg-secondary p-4 rounded-lg">
                 <p className="text-sm text-muted-foreground">
                   ⏱️ <strong>Estimated time:</strong> 15-20 minutes
+                </p>
+              </div>
+
+              <div className="bg-accent/10 border-l-4 border-accent p-4 rounded-lg">
+                <p className="text-xs text-muted-foreground">
+                  <strong>Disclaimer:</strong> This is a screening tool for informational purposes only and is NOT a medical diagnosis. Results should be reviewed with a qualified professional.
                 </p>
               </div>
 
@@ -374,6 +385,37 @@ export default function Screening() {
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit Screening'}
                 </Button>
+              </div>
+            </div>
+          )}
+
+          {/* Processing Step */}
+          {step === 'processing' && (
+            <div className="card-soft space-y-6 text-center py-12">
+              <div className="space-y-4">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto animate-pulse">
+                  <span className="text-3xl">🧠</span>
+                </div>
+                <h2 className="text-2xl font-semibold text-foreground">Analyzing Your Responses</h2>
+                <p className="text-muted-foreground max-w-md mx-auto">
+                  Our AI is processing your screening results. This may take a few moments...
+                </p>
+              </div>
+              <div className="space-y-3">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary animate-bounce" />
+                    <p className="text-sm text-muted-foreground">Evaluating reading fluency</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary animate-bounce" style={{ animationDelay: '0.2s' }} />
+                    <p className="text-sm text-muted-foreground">Analyzing phonological awareness</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary animate-bounce" style={{ animationDelay: '0.4s' }} />
+                    <p className="text-sm text-muted-foreground">Assessing spelling patterns</p>
+                  </div>
+                </div>
               </div>
             </div>
           )}
