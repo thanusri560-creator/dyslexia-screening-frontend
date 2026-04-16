@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'wouter';
-import { Menu, X, Settings } from 'lucide-react';
+import { Menu, X, Settings, Type, Volume2 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
+import { useAccessibility } from '@/contexts/AccessibilityContext';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -9,6 +10,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
   DropdownMenuSeparator,
+  DropdownMenuCheckboxItem,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuLabel,
 } from '@/components/ui/dropdown-menu';
 
 interface HeaderProps {
@@ -18,6 +23,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onMenuToggle, showMenu = false }) => {
   const { user, logout } = useAuth();
+  const { settings, updateSettings } = useAccessibility();
 
   return (
     <header className="bg-white border-b border-border shadow-sm">
@@ -49,7 +55,69 @@ export const Header: React.FC<HeaderProps> = ({ onMenuToggle, showMenu = false }
         </nav>
 
         {/* Right Side Actions */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
+          {/* Accessibility Quick Controls */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="sm" className="gap-2">
+                <Type className="w-4 h-4" />
+                <span className="hidden sm:inline text-xs">A</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuLabel className="text-xs font-semibold">Accessibility</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              
+              {/* Dyslexia Font Toggle */}
+              <DropdownMenuCheckboxItem
+                checked={settings.dyslexiaFont}
+                onCheckedChange={(checked) => updateSettings({ dyslexiaFont: checked })}
+                className="flex items-center gap-2"
+              >
+                <Type className="w-4 h-4" />
+                <span>Dyslexia-Friendly Font</span>
+              </DropdownMenuCheckboxItem>
+              
+              {/* Text Size Selection */}
+              <DropdownMenuLabel className="text-xs font-semibold mt-2 mb-1">Text Size</DropdownMenuLabel>
+              <DropdownMenuRadioGroup value={settings.textSize} onValueChange={(value) => updateSettings({ textSize: value as any })}>
+                <DropdownMenuRadioItem value="normal" className="text-sm">Normal</DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="large" className="text-base">Large</DropdownMenuRadioItem>
+                <DropdownMenuRadioItem value="extra-large" className="text-lg">Extra Large</DropdownMenuRadioItem>
+              </DropdownMenuRadioGroup>
+              
+              <DropdownMenuSeparator />
+              
+              {/* Other Accessibility Options */}
+              <DropdownMenuCheckboxItem
+                checked={settings.highContrast}
+                onCheckedChange={(checked) => updateSettings({ highContrast: checked })}
+              >
+                High Contrast
+              </DropdownMenuCheckboxItem>
+              
+              <DropdownMenuCheckboxItem
+                checked={settings.reduceMotion}
+                onCheckedChange={(checked) => updateSettings({ reduceMotion: checked })}
+              >
+                Reduce Motion
+              </DropdownMenuCheckboxItem>
+              
+              <DropdownMenuCheckboxItem
+                checked={settings.textToSpeech}
+                onCheckedChange={(checked) => updateSettings({ textToSpeech: checked })}
+              >
+                <Volume2 className="w-4 h-4 mr-2" />
+                Text-to-Speech
+              </DropdownMenuCheckboxItem>
+              
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild>
+                <a href="/accessibility" className="cursor-pointer text-xs">Full Settings</a>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           {user ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

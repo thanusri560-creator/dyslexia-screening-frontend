@@ -216,3 +216,86 @@
     @apply bg-border h-px my-6;
   }
 }
+
+/* Dyslexia-Friendly Font Styles */
+html.dyslexia-font {
+  font-family: 'OpenDyslexic', 'Open Sans', sans-serif;
+}
+
+html.dyslexia-font body {
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+
+html.dyslexia-font h1,
+html.dyslexia-font h2,
+html.dyslexia-font h3,
+html.dyslexia-font h4,
+html.dyslexia-font h5,
+html.dyslexia-font h6 {
+  font-family: 'OpenDyslexic', 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Text Size Adjustments */
+html[data-text-size="large"] {
+  font-size: 18px;
+}
+
+html[data-text-size="large"] h1 {
+  font-size: 2.5rem;
+}
+
+html[data-text-size="large"] h2 {
+  font-size: 2rem;
+}
+
+html[data-text-size="large"] h3 {
+  font-size: 1.75rem;
+}
+
+html[data-text-size="large"] p {
+  font-size: 1.125rem;
+}
+
+html[data-text-size="extra-large"] {
+  font-size: 20px;
+}
+
+html[data-text-size="extra-large"] h1 {
+  font-size: 3rem;
+}
+
+html[data-text-size="extra-large"] h2 {
+  font-size: 2.5rem;
+}
+
+html[data-text-size="extra-large"] h3 {
+  font-size: 2rem;
+}
+
+html[data-text-size="extra-large"] p {
+  font-size: 1.375rem;
+}
+
+/* High Contrast Mode */
+html.high-contrast {
+  --foreground: #000000;
+  --background: #FFFFFF;
+  --card: #FFFFFF;
+  --card-foreground: #000000;
+  --border: #000000;
+  --primary: #0066CC;
+  --accent: #CC0000;
+}
+
+html.high-contrast * {
+  border-width: 2px !important;
+}
+
+/* Reduce Motion */
+html.reduce-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
