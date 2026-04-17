@@ -1,0 +1,100 @@
+{
+  "age_groups": [
+    {
+      "age_range": "6-8",
+      "levels": {
+        "easy": {
+          "words": ["sun", "cat", "hop", "nest", "milk"],
+          "sentences": [
+            "The cat is on the mat.",
+            "I can hop and skip.",
+            "We see the sun at noon."
+          ],
+          "paragraph": "Mia has a red bag. She puts a book and a pen in it. Then she goes to school with a smile."
+        },
+        "moderate": {
+          "words": ["garden", "blanket", "window", "rabbit", "yellow"],
+          "sentences": [
+            "The rabbit hid behind the green bush.",
+            "My sister folded the blanket after lunch.",
+            "A bright yellow kite flew above the field."
+          ],
+          "paragraph": "Arun planted seeds in a small garden near his home. He gave them water each morning and watched tiny green leaves appear after a few days."
+        },
+        "hard": {
+          "words": ["floating", "sparkling", "remember", "adventure", "basketball"],
+          "sentences": [
+            "The sparkling river moved quickly after the rain.",
+            "We will remember the story about the brave sailor.",
+            "Their adventure began when the map fell from the old book."
+          ],
+          "paragraph": "Lena packed her notebook, water bottle, and camera before the nature walk. Along the trail, she listened carefully to birds, counted smooth stones, and wrote down everything she noticed."
+        }
+      }
+    },
+    {
+      "age_range": "9-12",
+      "levels": {
+        "easy": {
+          "words": ["planet", "silver", "pencil", "market", "jungle"],
+          "sentences": [
+            "The silver fish darted through the clear water.",
+            "We bought fresh fruit at the busy market.",
+            "A small planet can still have a long journey around the sun."
+          ],
+          "paragraph": "Ravi borrowed a library book about rainforests. He learned that many animals depend on tall trees, warm air, and steady rain to survive."
+        },
+        "moderate": {
+          "words": ["capture", "distance", "musician", "parallel", "discovery"],
+          "sentences": [
+            "The musician practiced until every note sounded clear.",
+            "We measured the distance from the gate to the classroom.",
+            "A new discovery can change the way people understand science."
+          ],
+          "paragraph": "During the science fair, Nia presented a model that explained how volcanoes form. She answered questions confidently and described each layer of rock with care."
+        },
+        "hard": {
+          "words": ["fortunate", "mechanical", "historical", "consequence", "environment"],
+          "sentences": [
+            "The historical building remained strong after many years of repair.",
+            "Every consequence of the experiment was written in the report.",
+            "Protecting the environment requires daily choices from every community."
+          ],
+          "paragraph": "When the robotics club met after school, the students compared several designs before building their final machine. They revised the wheels, tested the sensors, and recorded each improvement in a shared log."
+        }
+      }
+    },
+    {
+      "age_range": "13-15",
+      "levels": {
+        "easy": {
+          "words": ["context", "respond", "analyze", "chapter", "curious"],
+          "sentences": [
+            "Readers often analyze a chapter before discussing its theme.",
+            "She was curious about how the device produced clean energy.",
+            "Please respond clearly so the group can follow your idea."
+          ],
+          "paragraph": "Kiran joined the debate team because he enjoyed researching current issues and presenting balanced arguments. Each week, he gathered evidence, organized his notes, and practiced speaking with confidence."
+        },
+        "moderate": {
+          "words": ["strategy", "efficient", "evaluate", "narrative", "persistent"],
+          "sentences": [
+            "A strong strategy can make a difficult task feel manageable.",
+            "The editor asked the writer to evaluate the narrative structure.",
+            "Her persistent effort helped the team complete the project on time."
+          ],
+          "paragraph": "For the history assignment, Amara compared letters, photographs, and newspaper articles from the same decade. By examining several sources, she built a clearer understanding of how ordinary people experienced change."
+        },
+        "hard": {
+          "words": ["interpretation", "responsibility", "extraordinary", "collaboration", "miscommunication"],
+          "sentences": [
+            "Accurate interpretation depends on both evidence and careful reasoning.",
+            "Their collaboration improved once they addressed the earlier miscommunication.",
+            "With responsibility and patience, the volunteers organized an extraordinary event."
+          ],
+          "paragraph": "Before presenting the final proposal, the student committee reviewed survey responses, budget estimates, and feedback from teachers. They recognized that successful planning required collaboration, flexibility, and a willingness to revise weak ideas."
+        }
+      }
+    }
+  ]
+}
