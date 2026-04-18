@@ -4,31 +4,442 @@
       "age_range": "6-8",
       "levels": {
         "easy": {
-          "words": ["sun", "cat", "hop", "nest", "milk"],
-          "sentences": [
-            "The cat is on the mat.",
-            "I can hop and skip.",
-            "We see the sun at noon."
-          ],
-          "paragraph": "Mia has a red bag. She puts a book and a pen in it. Then she goes to school with a smile."
+          "reading": {
+            "words": [
+              "sun",
+              "cat",
+              "hop",
+              "nest",
+              "milk"
+            ],
+            "sentences": [
+              "The cat is on the mat.",
+              "I can hop and skip.",
+              "We see the sun at noon."
+            ],
+            "paragraph": "Mia has a red bag. She puts a book and a pen in it. Then she goes to school with a smile."
+          },
+          "spelling": {
+            "words": [
+              "cat",
+              "sun",
+              "dog",
+              "ball",
+              "book"
+            ],
+            "word_options": [
+              [
+                "cat",
+                "kat",
+                "kat",
+                "cat"
+              ],
+              [
+                "sun",
+                "san",
+                "sun",
+                "son"
+              ],
+              [
+                "dog",
+                "dag",
+                "dog",
+                "doag"
+              ],
+              [
+                "ball",
+                "bawl",
+                "bal",
+                "boll"
+              ],
+              [
+                "book",
+                "buk",
+                "booke",
+                "book"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "What is the first sound in this word?",
+                "word": "cat",
+                "answer": "k",
+                "options": [
+                  "k",
+                  "t",
+                  "m",
+                  "s"
+                ]
+              },
+              {
+                "instruction": "How many syllables in this word?",
+                "word": "basket",
+                "answer": "2",
+                "options": [
+                  "1",
+                  "2",
+                  "3",
+                  "4"
+                ]
+              },
+              {
+                "instruction": "What rhymes with this word?",
+                "word": "hop",
+                "answer": "top",
+                "options": [
+                  "top",
+                  "hat",
+                  "cup",
+                  "sit"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "was",
+                "distractors": [
+                  "saw",
+                  "was",
+                  "saw",
+                  "was"
+                ]
+              },
+              {
+                "target": "the",
+                "distractors": [
+                  "teh",
+                  "the",
+                  "the",
+                  "hte"
+                ]
+              },
+              {
+                "target": "and",
+                "distractors": [
+                  "nad",
+                  "and",
+                  "and",
+                  "adn"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "apple",
+                "syllable_count": 2
+              },
+              {
+                "word": "banana",
+                "syllable_count": 3
+              },
+              {
+                "word": "cat",
+                "syllable_count": 1
+              },
+              {
+                "word": "elephant",
+                "syllable_count": 3
+              }
+            ]
+          }
         },
         "moderate": {
-          "words": ["garden", "blanket", "window", "rabbit", "yellow"],
-          "sentences": [
-            "The rabbit hid behind the green bush.",
-            "My sister folded the blanket after lunch.",
-            "A bright yellow kite flew above the field."
-          ],
-          "paragraph": "Arun planted seeds in a small garden near his home. He gave them water each morning and watched tiny green leaves appear after a few days."
+          "reading": {
+            "words": [
+              "garden",
+              "blanket",
+              "window",
+              "rabbit",
+              "yellow"
+            ],
+            "sentences": [
+              "The rabbit hid behind the green bush.",
+              "My sister folded the blanket after lunch.",
+              "A bright yellow kite flew above the field."
+            ],
+            "paragraph": "Arun planted seeds in a small garden near his home. He gave them water each morning and watched tiny green leaves appear after a few days."
+          },
+          "spelling": {
+            "words": [
+              "garden",
+              "rabbit",
+              "window",
+              "yellow",
+              "water"
+            ],
+            "word_options": [
+              [
+                "garden",
+                "gardn",
+                "gaurden",
+                "garden"
+              ],
+              [
+                "rabbit",
+                "rabit",
+                "rabbit",
+                "rabitt"
+              ],
+              [
+                "window",
+                "windo",
+                "window",
+                "windoe"
+              ],
+              [
+                "yellow",
+                "yelo",
+                "yellow",
+                "yelow"
+              ],
+              [
+                "water",
+                "wator",
+                "water",
+                "waterr"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "What sound does this word end with?",
+                "word": "garden",
+                "answer": "n",
+                "options": [
+                  "n",
+                  "d",
+                  "t",
+                  "m"
+                ]
+              },
+              {
+                "instruction": "How many syllables in this word?",
+                "word": "elephant",
+                "answer": "3",
+                "options": [
+                  "2",
+                  "3",
+                  "4",
+                  "1"
+                ]
+              },
+              {
+                "instruction": "Which word starts with the same sound?",
+                "word": "rabbit",
+                "answer": "rain",
+                "options": [
+                  "rain",
+                  "cat",
+                  "sun",
+                  "dog"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "from",
+                "distractors": [
+                  "form",
+                  "from",
+                  "from",
+                  "frm"
+                ]
+              },
+              {
+                "target": "they",
+                "distractors": [
+                  "thye",
+                  "they",
+                  "the",
+                  "thay"
+                ]
+              },
+              {
+                "target": "there",
+                "distractors": [
+                  "thier",
+                  "there",
+                  "their",
+                  "ther"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "garden",
+                "syllable_count": 2
+              },
+              {
+                "word": "elephant",
+                "syllable_count": 3
+              },
+              {
+                "word": "window",
+                "syllable_count": 2
+              },
+              {
+                "word": "butterfly",
+                "syllable_count": 3
+              }
+            ]
+          }
         },
         "hard": {
-          "words": ["floating", "sparkling", "remember", "adventure", "basketball"],
-          "sentences": [
-            "The sparkling river moved quickly after the rain.",
-            "We will remember the story about the brave sailor.",
-            "Their adventure began when the map fell from the old book."
-          ],
-          "paragraph": "Lena packed her notebook, water bottle, and camera before the nature walk. Along the trail, she listened carefully to birds, counted smooth stones, and wrote down everything she noticed."
+          "reading": {
+            "words": [
+              "floating",
+              "sparkling",
+              "remember",
+              "adventure",
+              "basketball"
+            ],
+            "sentences": [
+              "The sparkling river moved quickly after the rain.",
+              "We will remember the story about the brave sailor.",
+              "Their adventure began when the map fell from the old book."
+            ],
+            "paragraph": "Lena packed her notebook, water bottle, and camera before the nature walk. Along the trail, she listened carefully to birds, counted smooth stones, and wrote down everything she noticed."
+          },
+          "spelling": {
+            "words": [
+              "adventure",
+              "sparkling",
+              "remember",
+              "floating",
+              "brave"
+            ],
+            "word_options": [
+              [
+                "adventure",
+                "adventur",
+                "adventu re",
+                "adventure"
+              ],
+              [
+                "sparkling",
+                "sparcling",
+                "sparkling",
+                "sparklin"
+              ],
+              [
+                "remember",
+                "remembre",
+                "remember",
+                "rember"
+              ],
+              [
+                "floating",
+                "floting",
+                "floatting",
+                "floating"
+              ],
+              [
+                "brave",
+                "brav",
+                "brave",
+                "braive"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "Change the first sound. What new word do you get?",
+                "word": "floating",
+                "answer": "boat",
+                "options": [
+                  "boat",
+                  "going",
+                  "flat",
+                  "flow"
+                ]
+              },
+              {
+                "instruction": "How many syllables in this word?",
+                "word": "adventure",
+                "answer": "3",
+                "options": [
+                  "2",
+                  "3",
+                  "4",
+                  "5"
+                ]
+              },
+              {
+                "instruction": "Which two words rhyme?",
+                "word": "sparkling",
+                "answer": "darkling",
+                "options": [
+                  "darkling",
+                  "barking",
+                  "marking",
+                  "parking"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "quite",
+                "distractors": [
+                  "quiet",
+                  "quite",
+                  "quite",
+                  "quit"
+                ]
+              },
+              {
+                "target": "through",
+                "distractors": [
+                  "thru",
+                  "through",
+                  "tough",
+                  "thorough"
+                ]
+              },
+              {
+                "target": "weather",
+                "distractors": [
+                  "whether",
+                  "weather",
+                  "weather",
+                  "wether"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "adventure",
+                "syllable_count": 3
+              },
+              {
+                "word": "sparkling",
+                "syllable_count": 3
+              },
+              {
+                "word": "basketball",
+                "syllable_count": 3
+              },
+              {
+                "word": "extraordinary",
+                "syllable_count": 5
+              }
+            ]
+          }
         }
       }
     },
@@ -36,31 +447,442 @@
       "age_range": "9-12",
       "levels": {
         "easy": {
-          "words": ["planet", "silver", "pencil", "market", "jungle"],
-          "sentences": [
-            "The silver fish darted through the clear water.",
-            "We bought fresh fruit at the busy market.",
-            "A small planet can still have a long journey around the sun."
-          ],
-          "paragraph": "Ravi borrowed a library book about rainforests. He learned that many animals depend on tall trees, warm air, and steady rain to survive."
+          "reading": {
+            "words": [
+              "planet",
+              "silver",
+              "pencil",
+              "market",
+              "jungle"
+            ],
+            "sentences": [
+              "The silver fish darted through the clear water.",
+              "We bought fresh fruit at the busy market.",
+              "A small planet can still have a long journey around the sun."
+            ],
+            "paragraph": "Ravi borrowed a library book about rainforests. He learned that many animals depend on tall trees, warm air, and steady rain to survive."
+          },
+          "spelling": {
+            "words": [
+              "planet",
+              "silver",
+              "pencil",
+              "jungle",
+              "fruit"
+            ],
+            "word_options": [
+              [
+                "planet",
+                "planit",
+                "planet",
+                "planett"
+              ],
+              [
+                "silver",
+                "silvar",
+                "silver",
+                "silvr"
+              ],
+              [
+                "pencil",
+                "pensil",
+                "pencil",
+                "pencile"
+              ],
+              [
+                "jungle",
+                "junggle",
+                "jungle",
+                "jungl"
+              ],
+              [
+                "fruit",
+                "froot",
+                "fruit",
+                "fruite"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "What is the middle sound?",
+                "word": "silver",
+                "answer": "l",
+                "options": [
+                  "l",
+                  "v",
+                  "r",
+                  "s"
+                ]
+              },
+              {
+                "instruction": "How many syllables?",
+                "word": "elephant",
+                "answer": "3",
+                "options": [
+                  "2",
+                  "3",
+                  "4",
+                  "1"
+                ]
+              },
+              {
+                "instruction": "What word has the same beginning sound?",
+                "word": "jungle",
+                "answer": "jump",
+                "options": [
+                  "jump",
+                  "fun",
+                  "run",
+                  "tungle"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "their",
+                "distractors": [
+                  "there",
+                  "their",
+                  "thier",
+                  "they're"
+                ]
+              },
+              {
+                "target": "which",
+                "distractors": [
+                  "witch",
+                  "which",
+                  "wich",
+                  "hwic"
+                ]
+              },
+              {
+                "target": "where",
+                "distractors": [
+                  "were",
+                  "where",
+                  "wear",
+                  "wher"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "planet",
+                "syllable_count": 2
+              },
+              {
+                "word": "pencil",
+                "syllable_count": 2
+              },
+              {
+                "word": "elephant",
+                "syllable_count": 3
+              },
+              {
+                "word": "beautiful",
+                "syllable_count": 3
+              }
+            ]
+          }
         },
         "moderate": {
-          "words": ["capture", "distance", "musician", "parallel", "discovery"],
-          "sentences": [
-            "The musician practiced until every note sounded clear.",
-            "We measured the distance from the gate to the classroom.",
-            "A new discovery can change the way people understand science."
-          ],
-          "paragraph": "During the science fair, Nia presented a model that explained how volcanoes form. She answered questions confidently and described each layer of rock with care."
+          "reading": {
+            "words": [
+              "capture",
+              "distance",
+              "musician",
+              "parallel",
+              "discovery"
+            ],
+            "sentences": [
+              "The musician practiced until every note sounded clear.",
+              "We measured the distance from the gate to the classroom.",
+              "A new discovery can change the way people understand science."
+            ],
+            "paragraph": "During the science fair, Nia presented a model that explained how volcanoes form. She answered questions confidently and described each layer of rock with care."
+          },
+          "spelling": {
+            "words": [
+              "capture",
+              "distance",
+              "musician",
+              "parallel",
+              "science"
+            ],
+            "word_options": [
+              [
+                "capture",
+                "captur",
+                "capture",
+                "caputre"
+              ],
+              [
+                "distance",
+                "distanse",
+                "distance",
+                "distence"
+              ],
+              [
+                "musician",
+                "musishan",
+                "musician",
+                "musicien"
+              ],
+              [
+                "parallel",
+                "paralel",
+                "parallel",
+                "parellel"
+              ],
+              [
+                "science",
+                "sience",
+                "science",
+                "sciense"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "Remove the first sound. What remains?",
+                "word": "capture",
+                "answer": "apture",
+                "options": [
+                  "apture",
+                  "cap",
+                  "ture",
+                  "capure"
+                ]
+              },
+              {
+                "instruction": "How many syllables?",
+                "word": "discovery",
+                "answer": "4",
+                "options": [
+                  "3",
+                  "4",
+                  "5",
+                  "2"
+                ]
+              },
+              {
+                "instruction": "Which word has a similar ending sound?",
+                "word": "distance",
+                "answer": "importance",
+                "options": [
+                  "importance",
+                  "distant",
+                  "instance",
+                  "dance"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "affect",
+                "distractors": [
+                  "effect",
+                  "affect",
+                  "affact",
+                  "afect"
+                ]
+              },
+              {
+                "target": "principal",
+                "distractors": [
+                  "principle",
+                  "principal",
+                  "principel",
+                  "prinicpal"
+                ]
+              },
+              {
+                "target": "accept",
+                "distractors": [
+                  "except",
+                  "accept",
+                  "accpt",
+                  "aksept"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "distance",
+                "syllable_count": 2
+              },
+              {
+                "word": "musician",
+                "syllable_count": 3
+              },
+              {
+                "word": "discovery",
+                "syllable_count": 4
+              },
+              {
+                "word": "volcano",
+                "syllable_count": 3
+              }
+            ]
+          }
         },
         "hard": {
-          "words": ["fortunate", "mechanical", "historical", "consequence", "environment"],
-          "sentences": [
-            "The historical building remained strong after many years of repair.",
-            "Every consequence of the experiment was written in the report.",
-            "Protecting the environment requires daily choices from every community."
-          ],
-          "paragraph": "When the robotics club met after school, the students compared several designs before building their final machine. They revised the wheels, tested the sensors, and recorded each improvement in a shared log."
+          "reading": {
+            "words": [
+              "fortunate",
+              "mechanical",
+              "historical",
+              "consequence",
+              "environment"
+            ],
+            "sentences": [
+              "The historical building remained strong after many years of repair.",
+              "Every consequence of the experiment was written in the report.",
+              "Protecting the environment requires daily choices from every community."
+            ],
+            "paragraph": "When the robotics club met after school, the students compared several designs before building their final machine. They revised the wheels, tested the sensors, and recorded each improvement in a shared log."
+          },
+          "spelling": {
+            "words": [
+              "fortunate",
+              "mechanical",
+              "historical",
+              "consequence",
+              "environment"
+            ],
+            "word_options": [
+              [
+                "fortunate",
+                "fortunat",
+                "fortunate",
+                "fortinate"
+              ],
+              [
+                "mechanical",
+                "mechanicle",
+                "mechanical",
+                "mekanical"
+              ],
+              [
+                "historical",
+                "histrical",
+                "historical",
+                "historicel"
+              ],
+              [
+                "consequence",
+                "consequense",
+                "consequence",
+                "consiquense"
+              ],
+              [
+                "environment",
+                "enviroment",
+                "environment",
+                "environement"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "What prefix is in this word?",
+                "word": "environment",
+                "answer": "en",
+                "options": [
+                  "en",
+                  "in",
+                  "un",
+                  "re"
+                ]
+              },
+              {
+                "instruction": "How many syllables?",
+                "word": "consequence",
+                "answer": "3",
+                "options": [
+                  "2",
+                  "3",
+                  "4",
+                  "1"
+                ]
+              },
+              {
+                "instruction": "Which word shares the same root?",
+                "word": "historical",
+                "answer": "history",
+                "options": [
+                  "history",
+                  "historian",
+                  "historic",
+                  "all of the above"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "complement",
+                "distractors": [
+                  "compliment",
+                  "complement",
+                  "complament",
+                  "complemnt"
+                ]
+              },
+              {
+                "target": "stationary",
+                "distractors": [
+                  "stationery",
+                  "stationary",
+                  "stationry",
+                  "statonary"
+                ]
+              },
+              {
+                "target": "lose",
+                "distractors": [
+                  "loose",
+                  "lose",
+                  "losse",
+                  "loze"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "mechanical",
+                "syllable_count": 4
+              },
+              {
+                "word": "consequence",
+                "syllable_count": 3
+              },
+              {
+                "word": "environment",
+                "syllable_count": 4
+              },
+              {
+                "word": "extraordinary",
+                "syllable_count": 5
+              }
+            ]
+          }
         }
       }
     },
@@ -68,31 +890,442 @@
       "age_range": "13-15",
       "levels": {
         "easy": {
-          "words": ["context", "respond", "analyze", "chapter", "curious"],
-          "sentences": [
-            "Readers often analyze a chapter before discussing its theme.",
-            "She was curious about how the device produced clean energy.",
-            "Please respond clearly so the group can follow your idea."
-          ],
-          "paragraph": "Kiran joined the debate team because he enjoyed researching current issues and presenting balanced arguments. Each week, he gathered evidence, organized his notes, and practiced speaking with confidence."
+          "reading": {
+            "words": [
+              "context",
+              "respond",
+              "analyze",
+              "chapter",
+              "curious"
+            ],
+            "sentences": [
+              "Readers often analyze a chapter before discussing its theme.",
+              "She was curious about how the device produced clean energy.",
+              "Please respond clearly so the group can follow your idea."
+            ],
+            "paragraph": "Kiran joined the debate team because he enjoyed researching current issues and presenting balanced arguments. Each week, he gathered evidence, organized his notes, and practiced speaking with confidence."
+          },
+          "spelling": {
+            "words": [
+              "context",
+              "respond",
+              "analyze",
+              "chapter",
+              "curious"
+            ],
+            "word_options": [
+              [
+                "context",
+                "contex",
+                "context",
+                "contect"
+              ],
+              [
+                "respond",
+                "responed",
+                "respond",
+                "respnd"
+              ],
+              [
+                "analyze",
+                "analise",
+                "analyze",
+                "analize"
+              ],
+              [
+                "chapter",
+                "chappter",
+                "chapter",
+                "chaptor"
+              ],
+              [
+                "curious",
+                "curius",
+                "curious",
+                "cureous"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "What suffix is added to make this word a noun?",
+                "word": "analyze",
+                "answer": "sis",
+                "options": [
+                  "sis",
+                  "tion",
+                  "ment",
+                  "ness"
+                ]
+              },
+              {
+                "instruction": "How many syllables?",
+                "word": "curious",
+                "answer": "3",
+                "options": [
+                  "2",
+                  "3",
+                  "4",
+                  "1"
+                ]
+              },
+              {
+                "instruction": "What is the stressed syllable?",
+                "word": "analyze",
+                "answer": "AN",
+                "options": [
+                  "AN",
+                  "a",
+                  "lyze",
+                  "none"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "adapt",
+                "distractors": [
+                  "adopt",
+                  "adapt",
+                  "adpt",
+                  "addapt"
+                ]
+              },
+              {
+                "target": "later",
+                "distractors": [
+                  "latter",
+                  "later",
+                  "latter",
+                  "layter"
+                ]
+              },
+              {
+                "target": "quiet",
+                "distractors": [
+                  "quite",
+                  "quiet",
+                  "quiuet",
+                  "quiet"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "context",
+                "syllable_count": 2
+              },
+              {
+                "word": "analyze",
+                "syllable_count": 3
+              },
+              {
+                "word": "curious",
+                "syllable_count": 3
+              },
+              {
+                "word": "discussion",
+                "syllable_count": 3
+              }
+            ]
+          }
         },
         "moderate": {
-          "words": ["strategy", "efficient", "evaluate", "narrative", "persistent"],
-          "sentences": [
-            "A strong strategy can make a difficult task feel manageable.",
-            "The editor asked the writer to evaluate the narrative structure.",
-            "Her persistent effort helped the team complete the project on time."
-          ],
-          "paragraph": "For the history assignment, Amara compared letters, photographs, and newspaper articles from the same decade. By examining several sources, she built a clearer understanding of how ordinary people experienced change."
+          "reading": {
+            "words": [
+              "strategy",
+              "efficient",
+              "evaluate",
+              "narrative",
+              "persistent"
+            ],
+            "sentences": [
+              "A strong strategy can make a difficult task feel manageable.",
+              "The editor asked the writer to evaluate the narrative structure.",
+              "Her persistent effort helped the team complete the project on time."
+            ],
+            "paragraph": "For the history assignment, Amara compared letters, photographs, and newspaper articles from the same decade. By examining several sources, she built a clearer understanding of how ordinary people experienced change."
+          },
+          "spelling": {
+            "words": [
+              "strategy",
+              "efficient",
+              "evaluate",
+              "narrative",
+              "persistent"
+            ],
+            "word_options": [
+              [
+                "strategy",
+                "stratgey",
+                "strategy",
+                "stratedgy"
+              ],
+              [
+                "efficient",
+                "eficient",
+                "efficient",
+                "effishent"
+              ],
+              [
+                "evaluate",
+                "evalute",
+                "evaluate",
+                "evaluet"
+              ],
+              [
+                "narrative",
+                "narative",
+                "narrative",
+                "narrativ"
+              ],
+              [
+                "persistent",
+                "persistant",
+                "persistent",
+                "persisant"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "What is the root word?",
+                "word": "evaluate",
+                "answer": "value",
+                "options": [
+                  "value",
+                  "eval",
+                  "uate",
+                  "val"
+                ]
+              },
+              {
+                "instruction": "How many syllables?",
+                "word": "persistent",
+                "answer": "3",
+                "options": [
+                  "2",
+                  "3",
+                  "4",
+                  "1"
+                ]
+              },
+              {
+                "instruction": "Which word has the same stress pattern?",
+                "word": "strategy",
+                "answer": "history",
+                "options": [
+                  "history",
+                  "strategic",
+                  "strategist",
+                  "none"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "ensure",
+                "distractors": [
+                  "insure",
+                  "ensure",
+                  "ensur",
+                  "ensuer"
+                ]
+              },
+              {
+                "target": "personal",
+                "distractors": [
+                  "personnel",
+                  "personal",
+                  "personel",
+                  "peronal"
+                ]
+              },
+              {
+                "target": "council",
+                "distractors": [
+                  "counsel",
+                  "council",
+                  "councel",
+                  "counsil"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "strategy",
+                "syllable_count": 3
+              },
+              {
+                "word": "efficient",
+                "syllable_count": 3
+              },
+              {
+                "word": "narrative",
+                "syllable_count": 3
+              },
+              {
+                "word": "photographs",
+                "syllable_count": 3
+              }
+            ]
+          }
         },
         "hard": {
-          "words": ["interpretation", "responsibility", "extraordinary", "collaboration", "miscommunication"],
-          "sentences": [
-            "Accurate interpretation depends on both evidence and careful reasoning.",
-            "Their collaboration improved once they addressed the earlier miscommunication.",
-            "With responsibility and patience, the volunteers organized an extraordinary event."
-          ],
-          "paragraph": "Before presenting the final proposal, the student committee reviewed survey responses, budget estimates, and feedback from teachers. They recognized that successful planning required collaboration, flexibility, and a willingness to revise weak ideas."
+          "reading": {
+            "words": [
+              "interpretation",
+              "responsibility",
+              "extraordinary",
+              "collaboration",
+              "miscommunication"
+            ],
+            "sentences": [
+              "Accurate interpretation depends on both evidence and careful reasoning.",
+              "Their collaboration improved once they addressed the earlier miscommunication.",
+              "With responsibility and patience, the volunteers organized an extraordinary event."
+            ],
+            "paragraph": "Before presenting the final proposal, the student committee reviewed survey responses, budget estimates, and feedback from teachers. They recognized that successful planning required collaboration, flexibility, and a willingness to revise weak ideas."
+          },
+          "spelling": {
+            "words": [
+              "interpretation",
+              "responsibility",
+              "extraordinary",
+              "collaboration",
+              "miscommunication"
+            ],
+            "word_options": [
+              [
+                "interpretation",
+                "interpretasion",
+                "interpretation",
+                "interpritation"
+              ],
+              [
+                "responsibility",
+                "responsability",
+                "responsibility",
+                "responsiblity"
+              ],
+              [
+                "extraordinary",
+                "extra ordinry",
+                "extraordinary",
+                "extrordinary"
+              ],
+              [
+                "collaboration",
+                "collabaration",
+                "collaboration",
+                "collabration"
+              ],
+              [
+                "miscommunication",
+                "miscomunication",
+                "miscommunication",
+                "miscomunication"
+              ]
+            ]
+          },
+          "phonological": {
+            "sound_tasks": [
+              {
+                "instruction": "Break this word into its parts. How many morphemes?",
+                "word": "miscommunication",
+                "answer": "4",
+                "options": [
+                  "3",
+                  "4",
+                  "5",
+                  "2"
+                ]
+              },
+              {
+                "instruction": "What is the primary stress?",
+                "word": "extraordinary",
+                "answer": "or",
+                "options": [
+                  "ex",
+                  "tra",
+                  "or",
+                  "di"
+                ]
+              },
+              {
+                "instruction": "Which prefix means 'wrong'?",
+                "word": "miscommunication",
+                "answer": "mis",
+                "options": [
+                  "mis",
+                  "com",
+                  "un",
+                  "re"
+                ]
+              }
+            ]
+          },
+          "word_recognition": {
+            "word_pairs": [
+              {
+                "target": "precede",
+                "distractors": [
+                  "proceed",
+                  "precede",
+                  "preceed",
+                  "presede"
+                ]
+              },
+              {
+                "target": "eligible",
+                "distractors": [
+                  "illegible",
+                  "eligible",
+                  "eligable",
+                  "edgible"
+                ]
+              },
+              {
+                "target": "conscience",
+                "distractors": [
+                  "conscious",
+                  "conscience",
+                  "concious",
+                  "consciense"
+                ]
+              }
+            ]
+          },
+          "syllable": {
+            "words": [
+              {
+                "word": "interpretation",
+                "syllable_count": 5
+              },
+              {
+                "word": "responsibility",
+                "syllable_count": 6
+              },
+              {
+                "word": "extraordinary",
+                "syllable_count": 5
+              },
+              {
+                "word": "miscommunication",
+                "syllable_count": 7
+              }
+            ]
+          }
         }
       }
     }

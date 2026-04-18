@@ -31,17 +31,17 @@ export function TestFlow({
   onComplete,
   onRecord,
 }: TestFlowProps) {
-  const activeStep: 1 | 2 | 3 = currentStep === 2 ? 1 : currentStep === 3 ? 2 : 3;
+  const activeStep: 1 | 2 | 3 = currentStep === 3 ? 1 : currentStep === 4 ? 2 : 3;
 
   const currentQuestionTotal =
-    currentStep === 2
+    currentStep === 3
       ? content.words.length
-      : currentStep === 3
+      : currentStep === 4
         ? content.sentences.length
         : 1;
 
   const questionLabel =
-    currentStep === 4
+    currentStep === 5
       ? "Paragraph 1 of 1"
       : `Item ${currentIndex + 1} of ${currentQuestionTotal}`;
 
@@ -61,7 +61,7 @@ export function TestFlow({
         </div>
       </div>
 
-      {currentStep === 2 ? (
+      {currentStep === 3 ? (
         <WordTest
           words={content.words}
           currentIndex={currentIndex}
@@ -72,7 +72,7 @@ export function TestFlow({
         />
       ) : null}
 
-      {currentStep === 3 ? (
+      {currentStep === 4 ? (
         <SentenceTest
           sentences={content.sentences}
           currentIndex={currentIndex}
@@ -83,7 +83,7 @@ export function TestFlow({
         />
       ) : null}
 
-      {currentStep === 4 ? (
+      {currentStep === 5 ? (
         <ParagraphTest
           paragraph={content.paragraph}
           recordedAudio={recordedAudio.paragraph}
