@@ -1,0 +1,301 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Dyslexia-Friendly Color Palette */
+  --primary: #A8D5BA; /* Sage Green - calming, growth-oriented */
+  --primary-foreground: #FBF8F3; /* Warm Cream */
+  --sidebar-primary: #A8D5BA;
+  --sidebar-primary-foreground: #FBF8F3;
+  --chart-1: #A8D5BA;
+  --chart-2: #F4A9A8;
+  --chart-3: #E8F4F8;
+  --chart-4: #D4C5B9;
+  --chart-5: #B8E0D2;
+  --radius: 0.75rem; /* 12px - softer, more approachable */
+  --background: #FBF8F3; /* Warm Cream - main background */
+  --foreground: #4A5568; /* Warm Slate - text color */
+  --card: #FFFFFF; /* Pure white for cards */
+  --card-foreground: #4A5568;
+  --popover: #FFFFFF;
+  --popover-foreground: #4A5568;
+  --secondary: #E8F4F8; /* Light Sky */
+  --secondary-foreground: #4A5568;
+  --muted: #D4C5B9; /* Soft Taupe */
+  --muted-foreground: #6B7280;
+  --accent: #F4A9A8; /* Soft Coral - encouragement */
+  --accent-foreground: #4A5568;
+  --destructive: #EF4444;
+  --destructive-foreground: #FBF8F3;
+  --border: #E5DDD4; /* Soft border */
+  --input: #FFFFFF;
+  --ring: #A8D5BA;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #4A5568;
+  --sidebar-accent: #E8F4F8;
+  --sidebar-accent-foreground: #4A5568;
+  --sidebar-border: #E5DDD4;
+  --sidebar-ring: #A8D5BA;
+}
+
+.dark {
+  --primary: #A8D5BA;
+  --primary-foreground: #2D3748;
+  --sidebar-primary: #A8D5BA;
+  --sidebar-primary-foreground: #2D3748;
+  --background: #2D3748;
+  --foreground: #E8F4F8;
+  --card: #1A202C;
+  --card-foreground: #E8F4F8;
+  --popover: #1A202C;
+  --popover-foreground: #E8F4F8;
+  --secondary: #4A5568;
+  --secondary-foreground: #E8F4F8;
+  --muted: #4A5568;
+  --muted-foreground: #A0AEC0;
+  --accent: #F4A9A8;
+  --accent-foreground: #2D3748;
+  --destructive: #F87171;
+  --destructive-foreground: #1A202C;
+  --border: #4A5568;
+  --input: #2D3748;
+  --ring: #A8D5BA;
+  --chart-1: #A8D5BA;
+  --chart-2: #F4A9A8;
+  --chart-3: #E8F4F8;
+  --chart-4: #D4C5B9;
+  --chart-5: #B8E0D2;
+  --sidebar: #1A202C;
+  --sidebar-foreground: #E8F4F8;
+  --sidebar-accent: #4A5568;
+  --sidebar-accent-foreground: #E8F4F8;
+  --sidebar-border: #4A5568;
+  --sidebar-ring: #A8D5BA;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  h1 {
+    @apply text-4xl leading-tight;
+  }
+  
+  h2 {
+    @apply text-3xl leading-snug;
+  }
+  
+  h3 {
+    @apply text-2xl leading-snug;
+  }
+  
+  p {
+    @apply text-lg leading-relaxed;
+    letter-spacing: 0.02em;
+  }
+  
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+  
+  input, textarea, select {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+  
+  /* Dyslexia-Friendly Typography Utilities */
+  .text-dyslexia-friendly {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+  }
+  
+  .text-display {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Soft Card Style */
+  .card-soft {
+    @apply bg-card text-card-foreground rounded-lg p-6 shadow-sm border border-border;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Soft Divider */
+  .divider-soft {
+    @apply bg-border h-px my-6;
+  }
+}
+
+/* Dyslexia-Friendly Font Styles */
+html.dyslexia-font {
+  font-family: 'OpenDyslexic', 'Open Sans', sans-serif;
+}
+
+html.dyslexia-font body {
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+
+html.dyslexia-font h1,
+html.dyslexia-font h2,
+html.dyslexia-font h3,
+html.dyslexia-font h4,
+html.dyslexia-font h5,
+html.dyslexia-font h6 {
+  font-family: 'OpenDyslexic', 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Text Size Adjustments */
+html[data-text-size="large"] {
+  font-size: 18px;
+}
+
+html[data-text-size="large"] h1 {
+  font-size: 2.5rem;
+}
+
+html[data-text-size="large"] h2 {
+  font-size: 2rem;
+}
+
+html[data-text-size="large"] h3 {
+  font-size: 1.75rem;
+}
+
+html[data-text-size="large"] p {
+  font-size: 1.125rem;
+}
+
+html[data-text-size="extra-large"] {
+  font-size: 20px;
+}
+
+html[data-text-size="extra-large"] h1 {
+  font-size: 3rem;
+}
+
+html[data-text-size="extra-large"] h2 {
+  font-size: 2.5rem;
+}
+
+html[data-text-size="extra-large"] h3 {
+  font-size: 2rem;
+}
+
+html[data-text-size="extra-large"] p {
+  font-size: 1.375rem;
+}
+
+/* High Contrast Mode */
+html.high-contrast {
+  --foreground: #000000;
+  --background: #FFFFFF;
+  --card: #FFFFFF;
+  --card-foreground: #000000;
+  --border: #000000;
+  --primary: #0066CC;
+  --accent: #CC0000;
+}
+
+html.high-contrast * {
+  border-width: 2px !important;
+}
+
+/* Reduce Motion */
+html.reduce-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
