@@ -91,7 +91,7 @@ The dataset includes:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/voxlexi.git
+git clone [https://github.com/thanusri560-creator/dyslexia-screening-frontend/tree/main/dyslexiacur2]
 cd voxlexi
 ```
 
